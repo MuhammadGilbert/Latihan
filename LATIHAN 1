@@ -1,0 +1,23 @@
+package deretaritmatika;
+
+public class DeretAritmatika {
+
+    public static void main(String[] args) {
+        
+        int n, x, y, Un, Sn; //Membuat variabel dengan tipe data integer
+         n = 15;  
+         x = 4;  
+         y = 6;  
+         Un = 0; 
+
+         for(int i=1;  i<=n;  i++){ 
+             Un = x + (i - 1) * y; 
+
+             System.out.println("Nilai suku ke-" + i + " adalah = " + Un); 
+        }
+            Sn = (x+Un) * n/2;  //rumus untuk menghitung jumlah keseluruhan dari deret bilangan
+            System.out.println("Jumlah deret aritmatika yang terdiri dari " + n +" suku adalah " +  Sn);
+        
+    }
+    
+}
